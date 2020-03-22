@@ -37,7 +37,7 @@ body {font-family: Arial;}
 /* Style the tab content */
 .tabcontent {
   display: none;
-  padding: 300px 50px;
+  padding: 100px 50px;
   border: 2px solid #ccc;
   border-top: none;
 }
@@ -47,9 +47,10 @@ body {font-family: Arial;}
 
 <h1>Rishabh Kapoor</h1>
 <p>I'm a student at Rutgers University! Get to know me more.</p>
-
+	
+<body onload="document.getElementById('defaultOpen').click();">
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
+  <button class="tablinks active" onclick="openCity(event, 'Home')" id="defaultOpen">Home</button>
   <button class="tablinks" onclick="openCity(event, 'Activities')">Activities</button>
   <button class="tablinks" onclick="openCity(event, 'Experience')">Experience</button>
   <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
