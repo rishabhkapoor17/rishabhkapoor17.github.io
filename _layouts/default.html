@@ -49,6 +49,7 @@ body {font-family: Arial;}
 <p>I'm a student at Rutgers University! Get to know me more.</p>
 
 <div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Home')">Home</button>
   <button class="tablinks" onclick="openCity(event, 'Activities')">Activities</button>
   <button class="tablinks" onclick="openCity(event, 'Experience')">Experience</button>
   <button class="tablinks" onclick="openCity(event, 'Projects')">Projects</button>
@@ -99,7 +100,11 @@ function openCity(evt, cityName) {
   }
   document.getElementById(cityName).style.display = "block";
   evt.currentTarget.className += " active";
-}
+};
+	
+$( document ).ready(function() {
+$( "button:first " ).trigger( "click" );
+});
 </script>
    
 	<html>
